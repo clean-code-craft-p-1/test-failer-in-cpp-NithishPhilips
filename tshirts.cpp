@@ -14,11 +14,6 @@ void TestTshirts::testforTshirtSizes()
 	std::cout << "All is well (maybe!)\n";
 }
 
-char TShirt::size(int cms)
-{
-	return 0;
-}
-
 int main() {
 
 	TestTshirts::testforTshirtSizes();
