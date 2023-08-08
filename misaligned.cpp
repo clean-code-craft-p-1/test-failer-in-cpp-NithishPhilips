@@ -12,7 +12,7 @@ int Misaligned::printColorMap() {
 	for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             std::cout << Misaligned::findPair(i, j) << std::string((i * 5 + j < 10 ? 3 : 2), ' ').c_str() << " | " <<
-				majorColor[i] << std::string((9 - strlen(majorColor[i])), ' ').c_str() << " | " << minorColor[i] << "\n";
+				majorColor[i] << std::string((9 - std::strlen(majorColor[i])), ' ').c_str() << " | " << minorColor[i] << "\n";
         }
     }
 
