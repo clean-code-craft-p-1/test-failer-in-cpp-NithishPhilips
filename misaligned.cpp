@@ -7,18 +7,17 @@ int Misaligned::findPair(int majorCol, int minorCol)
 	return majorCol * 5 + minorCol;
 }
 
-int Misaligned::printColorMap() {
+int Misaligned::printColorMap()
+{
 	int i = 0, j = 0;
-    
-	for(i = 0; i < 5; i++) {
-        for(j = 0; j < 5; j++) {
-            std::cout << Misaligned::findPair(i, j) << std::string((i * 5 + j < 10 ? 3 : 2), ' ').c_str() << " | " <<
-				majorColor[i] << std::string((9 - strlen(majorColor[i])), ' ').c_str() << " | " << minorColor[i] << "\n";
-        }
-    }
-
-    return i * j;
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
+			std::cout << findPair(i, j) << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+		}
+	}
+	return i * j;
 }
+
 
 void TestMisaligned::testForMisalignment()
 {
