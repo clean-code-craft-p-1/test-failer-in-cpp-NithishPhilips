@@ -4,7 +4,7 @@
 
 int Misaligned::findPair(int majorCol, int minorCol)
 {
-	return majorCol * 5 + minorCol;
+	return majorCol * 5 + minorCol + 1;
 }
 
 int Misaligned::printColorMap()
@@ -29,7 +29,7 @@ void TestMisaligned::testForMisalignment()
 }
 
 int main() {
-	 TestMisaligned::testForMisalignment();
+    TestMisaligned::testForMisalignment();
 
     return 0;
 }
