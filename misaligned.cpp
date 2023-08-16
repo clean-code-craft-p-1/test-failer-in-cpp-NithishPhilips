@@ -23,7 +23,7 @@ void TestMisaligned::testForMisalignment()
 {
 	int result = Misaligned::printColorMap();
 	assert(Misaligned::findPair(0, 0) == 1);
-	assert(Misaligned::findPair(5, 5) == 25);
+	assert(Misaligned::findPair(0, 1) == 2);
 	assert(result == 25);
 	std::cout << "All is well (maybe!)\n";
 }
