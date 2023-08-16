@@ -11,7 +11,7 @@ char TShirt::size(int cms)
 	else if (cms > 38 && cms < 42) {
 		sizeName = 'M';
 	}
-	else if (cms => 42) {
+	else if (cms >= 42) {
 		sizeName = 'L';
 	}
 	return sizeName;
